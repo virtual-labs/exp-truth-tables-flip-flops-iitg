@@ -89,20 +89,24 @@
 
 
     const myQuestions = [{
-            question: "1.This is a sample question:", ///// Write the question inside double quotes
+            question: "1.What does the half circle on the clock input of a J-K flip-flop mean:", ///// Write the question inside double quotes
             answers: {
-                a: "This is a sample answer A", ///// Write the option 1 inside double quotes
-                b: "This is a sample answer B", ///// Write the option 2 inside double quotes
+                a: "Level enabled", ///// Write the option 1 inside double quotes
+                b: "Level triggered", ///// Write the option 2 inside double quotes
+                c: "negative edge triggered",
+                d: "Positive edge triggered",
             },
-            correctAnswer: "a" ///// Write the correct option inside double quotes
+            correctAnswer: "d" ///// Write the correct option inside double quotes
         },
 
     {
-      question: "<img src='images/8.PNG'><br>Identify the location of Secondary electron detector",  ///// Write the question inside double quotes
+      question: "2.How is a J-K flip-flop made to toggle?",  ///// Write the question inside double quotes
       answers: {
-        a: "<img src='images/1b.png'>",                  ///// Write the option 1 inside double quotes
-        b: "<img src='images/1a.png'>",                  ///// Write the option 2 inside double quotes
-        c: "<img src='images/1c.PNG'>",      },
+        a: "J = 0, K = 0",                  ///// Write the option 1 inside double quotes
+        b: "J = 1, K = 0",                  ///// Write the option 2 inside double quotes
+        c: "J = 0, K = 1", 
+        d: "J = 1, K = 1",
+      },
       correctAnswer: "c"                ///// Write the correct option inside double quotes
     },
 
