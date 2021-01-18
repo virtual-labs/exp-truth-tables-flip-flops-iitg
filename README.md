@@ -4,8 +4,8 @@
 <b>Discipline | <b>Computer Science & Engineering
 :--|:--|
 <b> Lab | <b> Digital Electronics Lab
-<b> Experiment|     <b> 1130 To study the J-K FF and conversion of D and T flip flop to JKFF
-
+<b> Experiment|     <b> 1130 To study the J-K FF 
+  
 ### About the Experiment 
 
 Fill a brief description of this experiment here
