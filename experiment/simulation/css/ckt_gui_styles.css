@@ -94,11 +94,11 @@ div.inputButtonsRow{
 
 
 #cktBody{
-	font-size:9px;
-	font-size:0.9rem;
+    font-size:9px;
+    font-size:0.9rem;
     width: 852px;
     padding: 0 13.5px 0 13.5px;
-    height: 731px;;
+    height: 731px;
     margin:5% 10% 0 10%;
     /*min-height: 550px;*/
     overflow: hidden;
