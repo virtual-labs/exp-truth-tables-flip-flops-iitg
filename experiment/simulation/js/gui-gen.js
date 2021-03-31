@@ -18,7 +18,7 @@ $.fx.speeds._default = 1000;
 var setUI = function(){
     $( "#componentsDialog" ).dialog({
         autoOpen: false,
-        position: ['left','center']
+        position: ['left+200','top+200']
     });
 	
 	//$( "#componentsDialog" ).dialog( "option", "maxHeight", 400 );
@@ -116,7 +116,7 @@ var setUI = function(){
             event.preventDefault();
             circuitController.clearEverything();
 
-            $(".outputContainer div").css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+            $(".outputContainer div").css("background", "url('images/ckt_el/light_off.png') no-repeat");
             return false;
         }
     );
@@ -159,11 +159,11 @@ var setUI = function(){
 };
 
 var saveConnections = function(expId, wires){
-    $('#modDialog').html('<img src="../../images/ajax-loader.gif" width="128" height="15"><br/>Saving Circuit...');
+    $('#modDialog').html('<img src="images/ajax-loader.gif" width="128" height="15"><br/>Saving Circuit...');
     $( "#modDialog" ).dialog( "open" );
     var req = $.ajax({
         type: "POST",
-        url : "../../scripts/save_connections.php",
+        url : "scripts/save_connections.php",
         data: { "id":expId, "wiring":wires },
         dataType : "json",
         timeout : 20000,
@@ -188,7 +188,7 @@ var saveConnections = function(expId, wires){
 };
 
 var retriveConnectionsFromDB = function(expId){
-    $('#modDialog').html('<img src="../../images/ajax-loader.gif" width="128" height="15"><br/>Loading Circuit...');
+    $('#modDialog').html('<img src="images/ajax-loader.gif" width="128" height="15"><br/>Loading Circuit...');
     $( "#modDialog" ).dialog( "open" );
 
     var req = $.ajax({
@@ -224,6 +224,6 @@ var retriveConnectionsFromDB = function(expId){
 
 $(document).ready(function() {
     //$('#cktBody').css({'height':$(window).height() - 90});
-    $('#sideBar').css({'height':$(window).height() - 90});
+//     $('#sideBar').css({'height':$(window).height() - 90});
     setUI();
 });
