@@ -1,6 +1,6 @@
  var clearOutputBoxes = function(){
-    $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
-    $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+    $('#output_cout_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
+    $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
 };
 
 var checkGroundVccConnections = function(){
@@ -429,7 +429,7 @@ $(document).ready(function() {
             return false;
         }
 
-         $('#modDialog').html('<img src="../../images/ajax-loader.gif" width="128" height="15"><br/>Processing Input...'); 
+         $('#modDialog').html('<img src="images/ajax-loader.gif" width="128" height="15"><br/>Processing Input...'); 
 
         //$("#modDialog").dialog( "open" );
         //$("#modDialog").show();
@@ -439,7 +439,7 @@ $(document).ready(function() {
 
         $( "#input4" ).prop( "checked", true );
 
-                $("#input4").prev('img.indicator').attr('src', '../../images/led1.png');
+                $("#input4").prev('img.indicator').attr('src', 'images/led1.png');
         
         
                 $("#input4").button("option", "icons", {
@@ -449,21 +449,21 @@ $(document).ready(function() {
         $("#modDialog").dialog( "close" );
         
         //----------------------------------------modification-------------------------------------------    
-            $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
-            $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+            $('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
+            $('#output_cout_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
             $.cookie("flag1", "1"); // save flag value in cookies
             
         //-----------------------------------------end---------------------------------------------------            
 
-        $('#modDialog').html('<img src="../../images/ajax-loader.gif" width="128" height="15"><br/>Processing Input...');
+        $('#modDialog').html('<img src="images/ajax-loader.gif" width="128" height="15"><br/>Processing Input...');
         $("#modDialog").dialog( "open" );
          
         if(input3==0 && input4==1)
         {
             $("#modDialog").dialog( "close" );
             
-            $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
-            $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+            $('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
+            $('#output_cout_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
             $.cookie("flag1", "1"); // save flag value in cookies
             //alert( $.cookie("flag1") );
             //var flag1=1;
@@ -471,10 +471,10 @@ $(document).ready(function() {
         } 
 
         else if(input5 == 0 && input1==0 && input2==0){
-            //$('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
+            //$('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
             //alert("Please switch on the clock");
             $("#modDialog").dialog( "close" );
-            $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+            $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
             return false;
         }
         else if(input5 == 1 && input1==0 && input2==0)
@@ -482,11 +482,11 @@ $(document).ready(function() {
             $("#modDialog").dialog( "close" );
             if(flag5=="yes")
             {    
-            $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+            $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
             }
             else if(flag4=="yes")
             {
-                $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+                $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
             } 
             flag2="yes";   
             return false;
@@ -495,7 +495,7 @@ $(document).ready(function() {
         else if(input5 == 1 && input1==0 && input2==1)
         {
             $("#modDialog").dialog( "close" );
-            $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+            $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
             var flag="yes";
             return false;
         }
@@ -503,7 +503,7 @@ $(document).ready(function() {
         {
             $("#modDialog").dialog( "close" );
             var flag4="yes";
-            $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
+            $('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
             return false;
         }
         else if(input5 == 1 && input1==1 && input2==1)
@@ -511,12 +511,12 @@ $(document).ready(function() {
             $("#modDialog").dialog( "close" );
             if(flag5=="yes" || flag=="yes" || flag4=="yes" || flag2=="yes")
             {    
-            $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
+            $('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
             
             }
             else if(flag4=="yes")
             {
-            $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");    
+            $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");    
             }    
             var flag5="yes";
             return false;
@@ -554,15 +554,15 @@ $(document).ready(function() {
             var cb = data.result.c;
 
             if(sb === '1'){
-                $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
+                $('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
             } else{
-                $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+                $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
             }
 
             if(cb === '1'){
-                $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
+                $('#output_cout_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
             } else{
-                $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+                $('#output_cout_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
             }
 
         });
@@ -604,14 +604,14 @@ $(document).ready(function() {
         {
             $("#modDialog").dialog( "close" );
             var flag4="yes";
-            $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
+            $('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
             return false;
         }
         else if(input5==1 && input2==1)
         {
             $("#modDialog").dialog( "close" );
                 
-            $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
+            $('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
             
             return false;
         }
@@ -621,7 +621,7 @@ $(document).ready(function() {
         {
             $("#modDialog").dialog( "close" );
             //alert("Please connect currectly");
-            $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+            $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
         } */
       }
 
@@ -681,7 +681,7 @@ $(document).ready(function() {
         {
             $("#modDialog").dialog( "close" );
             alert("Please set the preset and reset");
-            //$('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
+            //$('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
             return false;
 
         }  
@@ -690,8 +690,8 @@ $(document).ready(function() {
         {
             $("#modDialog").dialog( "close" );
             
-            $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
-            $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+            $('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
+            $('#output_cout_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
             $.cookie("flag1", "1"); // save flag value in cookies
             //var flag1=1;
             return false;
@@ -702,8 +702,8 @@ $(document).ready(function() {
         {
             $("#modDialog").dialog( "close" );
             
-            $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
-            $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
+            $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
+            $('#output_cout_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
             $.cookie("flag2", "1"); // save flag value in cookies
             //var flag2=1;
             return false;
@@ -714,8 +714,8 @@ $(document).ready(function() {
 
             $("#modDialog").dialog( "close" );
             //var flag3=1;
-            $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
-            $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+            $('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
+            $('#output_cout_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
             $.cookie("flag3", "1"); // save flag value in cookies
             return false;
         }
@@ -724,8 +724,8 @@ $(document).ready(function() {
 
             $("#modDialog").dialog( "close" );
             //var flag4=1;
-            $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
-            $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
+            $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
+            $('#output_cout_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
             $.cookie("flag4", "1"); // save flag value in cookies
             return false;
         }
@@ -737,8 +737,8 @@ $(document).ready(function() {
             //alert($.cookie("flag1"));
             $("#modDialog").dialog( "close" );
                 
-            $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
-            $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
+            $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
+            $('#output_cout_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
             $.removeCookie("flag1");
             $.removeCookie("flag3");
             return false;
@@ -748,30 +748,30 @@ $(document).ready(function() {
             {
                 $("#modDialog").dialog( "close" );
                 
-                $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
-                $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
+                $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
+                $('#output_cout_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
                 $.removeCookie("flag3");
             
             return false;
             }*/
             else if($.cookie("flag2")==1 || $.cookie("flag4")==1)
             {
-             $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
-             $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+             $('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
+             $('#output_cout_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
              $.removeCookie("flag2");
              $.removeCookie("flag4");
             return false;
             } 
             /*else if(flag2==1)
              {
-             $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
-             $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+             $('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
+             $('#output_cout_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
             
             return false;
             }*/
 
-             //$('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
-             //$('#output_cout_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+             //$('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
+             //$('#output_cout_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
             
             return false;
 
@@ -785,8 +785,8 @@ $(document).ready(function() {
             //alert($.cookie("flag1"));
             $("#modDialog").dialog( "close" );
                 
-           $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
-            $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+           $('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
+            $('#output_cout_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
             $.removeCookie("flag1");
             $.removeCookie("flag3");
             return false;
@@ -796,30 +796,30 @@ $(document).ready(function() {
             {
                 $("#modDialog").dialog( "close" );
                 
-                $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
-                $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
+                $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
+                $('#output_cout_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
                 $.removeCookie("flag3");
             
             return false;
             }*/
             else if($.cookie("flag2")==1 || $.cookie("flag4")==1)
             {
-             $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
-             $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
+             $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
+             $('#output_cout_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
              $.removeCookie("flag2");
              $.removeCookie("flag4");
             return false;
             } 
             /*else if(flag2==1)
              {
-             $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
-             $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+             $('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
+             $('#output_cout_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
             
             return false;
             }*/
 
-             //$('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
-             //$('#output_cout_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+             //$('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
+             //$('#output_cout_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
             
             return false;
 
@@ -838,7 +838,7 @@ $(document).ready(function() {
             {    
             $("#modDialog").dialog( "close" );
             //alert("Please connect currectly");
-            $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+            $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
             }
         } 
        
@@ -847,7 +847,7 @@ $(document).ready(function() {
 
       else
         {
-            //$('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+            //$('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
         }   
     });
 
@@ -880,21 +880,21 @@ $(document).ready(function() {
   
         if(input3==0)
            {
-                $('#modDialog').html('<img src="../../images/ajax-loader.gif" width="128" height="15"><br/>Processing Input...');
+                $('#modDialog').html('<img src="images/ajax-loader.gif" width="128" height="15"><br/>Processing Input...');
                 $("#modDialog").dialog( "open" );
              
-                $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
-                $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+                $('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
+                $('#output_cout_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
                 $("#modDialog").dialog( "close" );
             return false;   
            }
            /*else if(input3==1 && input5==1 && input1==1 && input2==0)
            {
-                $('#modDialog').html('<img src="../../images/ajax-loader.gif" width="128" height="15"><br/>Processing Input...');
+                $('#modDialog').html('<img src="images/ajax-loader.gif" width="128" height="15"><br/>Processing Input...');
                 $("#modDialog").dialog( "open" );
              
-                $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
-                $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+                $('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
+                $('#output_cout_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
                 $("#modDialog").dialog( "close" );
             return false;   
 
@@ -904,8 +904,8 @@ $(document).ready(function() {
      else
      {
                 alert("Please connect the preset and clear properly");
-                $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
-                $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+                $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
+                $('#output_cout_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
 
      }
 
@@ -938,19 +938,19 @@ $(document).ready(function() {
         if(input4==0)
            { 
                 //alert("hi");    
-                $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
-                $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
+                $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
+                $('#output_cout_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
                 var flag1="yes";
                 $("#modDialog").dialog( "close" );
             return false;   
            }
            else if(input4==1 && input5==1 && input1==1 && input2==0)
            {
-                $('#modDialog').html('<img src="../../images/ajax-loader.gif" width="128" height="15"><br/>Processing Input...');
+                $('#modDialog').html('<img src="images/ajax-loader.gif" width="128" height="15"><br/>Processing Input...');
                 $("#modDialog").dialog( "open" );
              
-                $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
-                $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+                $('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
+                $('#output_cout_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
                 var flag2="yes";
                 $("#modDialog").dialog( "close" );
             return false;   
@@ -959,11 +959,11 @@ $(document).ready(function() {
 
            else if(input4==1 && input5==1 && input1==0 && input2==1)
            {
-                $('#modDialog').html('<img src="../../images/ajax-loader.gif" width="128" height="15"><br/>Processing Input...');
+                $('#modDialog').html('<img src="images/ajax-loader.gif" width="128" height="15"><br/>Processing Input...');
                 $("#modDialog").dialog( "open" );
              
-                $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
-                $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
+                $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
+                $('#output_cout_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
                 var flag3="yes";
                 $("#modDialog").dialog( "close" );
             return false;   
@@ -974,21 +974,21 @@ $(document).ready(function() {
            {
                 if(flag1=="yes")
                 {
-                    $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
-                    $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+                    $('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
+                    $('#output_cout_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
                     //var flag4="yes";
                     
                 }
                 else if(flag2=="yes")
                 {
-                    $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
-                    $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
+                    $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
+                    $('#output_cout_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
                     //var flag5=="yes";
                 }
                 else if(flag3=="yes")
                 {
-                    $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
-                    $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+                    $('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
+                    $('#output_cout_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
                     //var flag4="yes";
                 } 
             return false;   
@@ -998,13 +998,13 @@ $(document).ready(function() {
            {
                  if(fla4=="yes")
                   {
-                      $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
-                      $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+                      $('#output_sum_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
+                      $('#output_cout_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
                   }
                   else if(flag5=="yes")
                   {
-                      $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
-                      $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_on1.png') no-repeat");
+                      $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
+                      $('#output_cout_comp').css("background", "url('images/ckt_el/light_on1.png') no-repeat");
                   }  
            }       
 
@@ -1012,8 +1012,8 @@ $(document).ready(function() {
      else{
                 
                 alert("Please connect the preset and clear properly");
-                $('#output_sum_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
-                $('#output_cout_comp').css("background", "url('../../images/ckt_el/light_off.png') no-repeat");
+                $('#output_sum_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
+                $('#output_cout_comp').css("background", "url('images/ckt_el/light_off.png') no-repeat");
                
      }
      
@@ -1033,13 +1033,13 @@ $(document).ready(function() {
                     primary: "custom-switch-icon-on"
                 }} );
 
-                $(this).prev('img.indicator').attr('src', '../../images/led1.png');
+                $(this).prev('img.indicator').attr('src', 'images/led1.png');
             } else{
                 $("#input1").button("option", {icons: {
                     primary: "custom-switch-icon"
                 }} );
 
-                $(this).prev('img.indicator').attr('src', '../../images/led0.png');
+                $(this).prev('img.indicator').attr('src', 'images/led0.png');
             }
         });
 
@@ -1054,13 +1054,13 @@ $(document).ready(function() {
                     primary: "custom-switch-icon-on"
                 } );
 
-                $(this).prev('img.indicator').attr('src', '../../images/led1.png');
+                $(this).prev('img.indicator').attr('src', 'images/led1.png');
             } else{
                 $("#input2").button("option", "icons", {
                     primary: "custom-switch-icon"
                 } );
 
-                $(this).prev('img.indicator').attr('src', '../../images/led0.png');
+                $(this).prev('img.indicator').attr('src', 'images/led0.png');
             }
         });
     $("#input3").button({
@@ -1074,13 +1074,13 @@ $(document).ready(function() {
                     primary: "custom-switch-icon-on"
                 } );
 
-                $(this).prev('img.indicator').attr('src', '../../images/led1.png');
+                $(this).prev('img.indicator').attr('src', 'images/led1.png');
             } else{
                 $("#input3").button("option", "icons", {
                     primary: "custom-switch-icon"
                 } );
 
-                $(this).prev('img.indicator').attr('src', '../../images/led0.png');
+                $(this).prev('img.indicator').attr('src', 'images/led0.png');
             }
         });
     $("#input4").button({
@@ -1094,13 +1094,13 @@ $(document).ready(function() {
                     primary: "custom-switch-icon-on"
                 } );
 
-                $(this).prev('img.indicator').attr('src', '../../images/led1.png');
+                $(this).prev('img.indicator').attr('src', 'images/led1.png');
             } else{
                 $("#input4").button("option", "icons", {
                     primary: "custom-switch-icon"
                 } );
 
-                $(this).prev('img.indicator').attr('src', '../../images/led0.png');
+                $(this).prev('img.indicator').attr('src', 'images/led0.png');
             }
         });
     $("#input5").button({
@@ -1114,13 +1114,13 @@ $(document).ready(function() {
                     primary: "custom-switch-icon-on1"
                 } );
 
-                $(this).prev('img.indicator').attr('src', '../../images/led1.png');
+                $(this).prev('img.indicator').attr('src', 'images/led1.png');
             } else{
                 $("#input5").button("option", "icons", {
                     primary: "custom-switch-icon1"
                 } );
 
-                $(this).prev('img.indicator').attr('src', '../../images/led0.png');
+                $(this).prev('img.indicator').attr('src', 'images/led0.png');
             }
         });
 
