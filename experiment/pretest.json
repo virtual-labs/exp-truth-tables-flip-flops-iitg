@@ -1,0 +1,1 @@
+[{"question":"1.When both inputs of a J-K flip-flop cycle, the output will","answers":{"a":"Be invalid","b":"Change","c":"Not change","d":"Toggle"},"correctAnswer":"c"},{"question":"2. What does the triangle on the clock input of a J-K flip-flop mean?","answers":{"a":"Level enabled","b":"Level triggered","c":"Both a & b","d":"Edge triggered"},"correctAnswer":"d"}]
