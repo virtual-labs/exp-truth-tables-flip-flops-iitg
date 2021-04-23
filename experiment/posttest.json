@@ -1,1 +1,19 @@
-[{"question":"1.What does the half circle on the clock input of a J-K flip-flop mean:","answers":{"a":"Level enabled","b":"Level triggered","c":"negative edge triggered","d":"Positive edge triggered"},"correctAnswer":"d"},{"question":"2.How is a J-K flip-flop made to toggle?","answers":{"a":"J = 0, K = 0","b":"J = 1, K = 0","c":"J = 0, K = 1","d":"J = 1, K = 1"},"correctAnswer":"c"}]
+[{
+	"question": "1.What does the half circle on the clock input of a J-K flip-flop mean:",
+	"answers": {
+		"a": "Level enabled",
+		"b": "Level triggered",
+		"c": "negative edge triggered",
+		"d": "Positive edge triggered"
+	},
+	"correctAnswer": "d"
+}, {
+	"question": "2.How is a J-K flip-flop made to toggle?",
+	"answers": {
+		"a": "J = 0, K = 0",
+		"b": "J = 1, K = 0",
+		"c": "J = 0, K = 1",
+		"d": "J = 1, K = 1"
+	},
+	"correctAnswer": "c"
+}]
